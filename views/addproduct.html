@@ -1,0 +1,25 @@
+{{template "partials/header" .}}
+
+<div class="container">
+  <h1>Form Tambah Product</h1>
+  <br>
+  <form method="POST" action="/shopping/create">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="">
+    </div>
+    <div class="mb-3">
+      <label for="quantity" class="form-label">Quantity</label>
+      <input type="text" class="form-control" name="quantity" id="quantity" placeholder="">
+    </div>
+    <div class="mb-3">
+      <label for="price" class="form-label">Price</label>
+      <input type="text" class="form-control" name="price" id="price" placeholder="">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Tambah</button>
+  </form>
+</div>
+
+
+{{template "partials/footer" .}}
